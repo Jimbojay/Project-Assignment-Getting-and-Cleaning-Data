@@ -34,9 +34,8 @@ For each record in the dataset it is provided:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Variable Descriptions
+##Variable Descriptions
 
-  </table>
 
 <table>
 <tr> <td> <b> Variable </b> </td> <td> <b> Description</b> </td> </tr>
