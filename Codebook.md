@@ -4,6 +4,22 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
+Source of the original data:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Full Description at the site where the data was obtained:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+##Process
+
+1. It downloads the UCI HAR Dataset data set and puts the zip file working directrory. After it is downloaded, it unzips the file into the UCI HAR Dataset folder.
+2. It loads the train and test data sets and appends the two datasets into one data frame. This is done using rbind.
+3. It extracts just the mean and standard deviation from the features data set. This is done using grep. The result is merged to the dataset
+4. The activities data set was observed and the activities in the dataset are converted accordingly
+5. Using gsub() descriptive variables are relabled, next participants are relabled
+6. A tidy dataset is created ant exported into the working directory
+
+
 ##Attribute Information
 
 For each record in the dataset it is provided:
@@ -19,6 +35,12 @@ For each record in the dataset it is provided:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Variable Descriptions
+
+<table>
+   <tr> <td>data1</td> <td>data2</td> </tr>
+   <tr> <td>data3</td> <td>data4</td> </tr>
+  </table>
+
 
 Variable |	Description
 - - - -  |	- - - - - - -
