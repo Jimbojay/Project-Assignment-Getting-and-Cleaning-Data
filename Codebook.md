@@ -36,13 +36,10 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 Variable Descriptions
 
-<table>
-   <tr> <td> <b> data1</td> <td>data2 </b> </td> </tr>
-   <tr> <td>data3</td> <td>data4</td> </tr>
   </table>
 
 <table>
-<tr> <td> <b> Variable </td> <td>Description</b> </td> </tr>
+<tr> <td> <b> Variable </b> </td> <td> <b> Description</b> </td> </tr>
 <tr> <td>subject	</td> <td> Subject ID</td> </tr>
 <tr> <td>tbodyacc.mean.x</td> <td>Mean time for acceleration of body for X direction</td> </tr>
 <tr> <td>tbodyacc.mean.y</td> <td>Mean time for acceleration of body for Y direction</td> </tr>
